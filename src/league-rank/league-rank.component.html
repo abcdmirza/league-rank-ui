@@ -1,0 +1,40 @@
+<div class="league-container">
+  <div class="league-title">
+    <h1>Bronze League</h1>
+    <p>Compete with top players and climb the ranks!</p>
+  </div>
+
+  <div class="league-header">
+    <span class="material-icons league-badge">military_tech</span>
+    <div class="timer">
+      <span class="material-icons timer-icon">timer</span>
+      <span>Ends in: {{ timer }}</span>
+    </div>
+  </div>
+
+  <div class="leaderboard">
+    <div *ngFor="let player of topPlayers" [ngClass]="{'highlight-you': player.isYou}" class="player-row">
+      <div class="rank-medal">
+        <ng-container [ngSwitch]="player.rank">
+          <span *ngSwitchCase="1" class="material-icons medal gold">emoji_events</span>
+          <span *ngSwitchCase="2" class="material-icons medal silver">emoji_events</span>
+          <span *ngSwitchCase="3" class="material-icons medal bronze">emoji_events</span>
+          <span *ngSwitchDefault class="rank">{{ player.rank }}</span>
+        </ng-container>
+      </div>
+      <img [src]="player.avatar" class="avatar-img" alt="avatar" />
+      <div class="player-info">
+        <h4>{{ player.name }}</h4>
+        <p>{{ player.trophies }} 🏆</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta-button">
+    <button>
+      <span class="material-icons">sports_esports</span> Play to earn trophies
+    </button>
+  </div>
+</div>
+
+

@@ -1,0 +1,146 @@
+body {
+  background-color: #0f1924;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.league-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center all content */
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+  gap: 28px;
+  background: url('../assets/background-img.png') no-repeat center center / cover;
+  color: white;
+  box-sizing: border-box;
+}
+
+.league-title {
+  text-align: center;
+}
+
+.league-title h1 {
+  font-size: 72px; /* Increased title size */
+  color: #cd7f32;
+  margin: 0 0 10px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.league-title p {
+  font-size: 20px;
+  color: #ccc;
+  margin: 0;
+}
+
+.league-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.league-badge,
+.timer-icon {
+  font-size: 64px;
+  color: #cd7f32;
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  color: white;
+  gap: 10px;
+}
+
+.leaderboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.player-row {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 12px 20px;
+  border-radius: 16px;
+  backdrop-filter: blur(6px);
+  width: 100%;
+  max-width: 700px;
+}
+
+.rank-medal {
+  width: 40px;
+  text-align: center;
+}
+
+.rank {
+  font-size: 20px;
+}
+
+.medal {
+  font-size: 28px;
+}
+
+.medal.gold {
+  color: #ffd700;
+}
+
+.medal.silver {
+  color: #c0c0c0;
+}
+
+.medal.bronze {
+  color: #cd7f32;
+}
+
+.avatar-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 15px;
+  border: 2px solid #fff;
+  object-fit: cover;
+}
+
+.player-info h4 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.player-info p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.highlight-you {
+  background: rgba(0, 255, 150, 0.2);
+  border: 2px solid #00ffaa;
+}
+
+.cta-button {
+  margin-top: 20px;
+}
+
+.cta-button button {
+  background: linear-gradient(to right, #fca311, #ffba08);
+  color: black;
+  font-weight: bold;
+  border: none;
+  padding: 18px 50px;
+  border-radius: 50px;
+  font-size: 18px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+}
